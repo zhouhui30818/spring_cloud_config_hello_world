@@ -1,1 +1,15 @@
-
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhouhui30818/spring_cloud_config_hello_world_files
+          search-paths: /**
+      name: config
+      label: master
+      username: try2better@163.com
+      password: Zh30818!
+  application:
+    name: config
+server:
+  port: 8091
